@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from '../NavBar/NavBar';
+import Footer from '../Footer/Footer';
 
 class MainContent extends Component {
     render() {
@@ -13,6 +14,7 @@ class MainContent extends Component {
                         <div className="module--half"></div>
                     </div>
                 </div>
+                <Footer />
             </section>
         )
     }
