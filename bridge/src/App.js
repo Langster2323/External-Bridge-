@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './app.scss'
 import MainContent from './components/MainContent/MainContent';
 import SideBar from './components/SideBar/SideBar';
 
@@ -18,10 +19,10 @@ class App extends Component {
   }
   render(){
     return (
-      <div className="App">
+      <main className="App">
         <SideBar toggleSidebar={this.toggleSidebar} expanded={this.state.expanded} />
-        <MainContent />
-      </div>
+        <MainContent expanded={this.state.expanded} />
+      </main>
     );
   }
   
